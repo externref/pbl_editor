@@ -14,37 +14,10 @@ import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
 public class EditorApplication {
-
     public static void main(String[] args) {
         SpringApplication.run(EditorApplication.class, args);
     }
-
 }
-
-class RequestData {
-    private String path;
-    private String code;
-
-    public String getPath() {
-        return path;
-    }
-
-    public void setPath(String path) {
-        this.path = path;
-    }
-
-    public String getCode() {
-        return code;
-    }
-
-    public void setCode(String code) {
-        this.code = code;
-    }
-}
-
-
-
-
 
 @RestController
 class FileController {
@@ -77,3 +50,26 @@ class FileController {
         return "handled";
     }
 }
+class RequestData {
+    private String path;
+    private String code;
+
+    public String getPath() {
+        return path;
+    }
+
+    public void setPath(String path) {
+        this.path = path;
+    }
+
+    public String getCode() {
+        return code;
+    }
+
+    public void setCode(String code) {
+        this.code = code;
+    }
+}
+
+
+
